@@ -716,7 +716,7 @@ body .sp-input {
 .main > .sideButtons > * {
 	margin: 0px;
 	float: left;
-	width: 50%;
+	width: 70%;
 }
 
 .main > hr {
@@ -1221,6 +1221,7 @@ header .pixbtn {
 	margin-top: 7px;
 	padding: 0px 10px;
 	line-height: 32px;
+	font-family: sans-serif;
 
   //border-style: solid !important;
   //border-width: 1px !important;
@@ -1282,7 +1283,7 @@ background-color: #444;
       -webkit-box-shadow: inset 0 1px 0px 0px rgba( 255, 255, 255, 0.5) !important;
 	border-radius: 2px;
 	display: inline-block;
-	width: 40%;
+	width: 70%;
 	margin-right: 5px;
 	overflow: hidden;
 }
@@ -1294,7 +1295,7 @@ background-color: #444;
 .pix_note { font-size: 13px;}
 .pix_warning {font-size: 15px;}
 header .actiosnButtons,header .btn-embossed, .frameCover .actiosnButtons, .frameCover .btn-embossed {
-	font-family: "Montserrat-Regular","Lato",​Helvetica,​Arial !important;font-weight: normal; 
+	font-family:   sans-serif !important;font-weight: normal;
 }
 
 .frameCover .btn, .editorButtons .btn {

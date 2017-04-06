@@ -261,7 +261,7 @@ var pendingChanges = false;
 
 function setPendingChanges(v) {
 	if( v == true ) {
-		$('#savePage .bLabel').text("Save changes (!)");
+		$('#savePage .bLabel').text("Պահել փոփոխությունները");
 		pendingChanges = true;
 	} else {
 		$('#savePage .bLabel').text("Nothing new to save");
@@ -456,7 +456,7 @@ function makeSortable(el) {
 				//add a delete button
 				delButton = $('<button type="button" class="btn btn-danger deleteBlock"><i class="pi pixicon-trash"></i> remove</button>');
 				resetButton = $('<button type="button" class="btn btn-warning resetBlock"><i class="fa fa-refresh"></i> reset</button>');
-				htmlButton = $('<button type="button" class="btn btn-inverse htmlBlock"><i class="fa fa-code"></i> source</button>');
+				htmlButton = $('<button type="button" class="btn btn-inverse htmlBlock"><i class="fa fa-code"></i> Կոդեր</button>');
 				dupButton = $('<button type="button" class="btn btn-info dupBlock"><i class="pi pixicon-stack"></i> duplicate</button>');
 				
 				frameCover = $('<div class="frameCover"></div>');

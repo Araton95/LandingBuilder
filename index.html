@@ -32,14 +32,14 @@
 				
 
 				<ul id="elements">
-					<li><a href="#" id="all"><i class="pixicon-grid"></i>&nbsp;All Blocks</a></li>
+					<li><a href="#" id="all"><i class="pixicon-grid"></i>&nbsp;Բոլոր բլոկերը</a></li>
 				</ul>
 
 				<a href="#" class="toggle"></a>
 
 				
 
-				<div class="left_headline"><i class="pi pixicon-paper-stack"></i> Pages</div>
+				<div class="left_headline"><i class="pi pixicon-paper-stack"></i> Էջեր</div>
 
 				<ul id="pages">
 					<li style="display: none;" id="newPageLI">
@@ -62,13 +62,13 @@
 				</ul>
 
 				<div class="sideButtons clearfix">
-					<a href="#" class="btn btn-sm btn-embossed" id="addPage"><i class="pi pixicon-circle-plus"></i> Add</a>
-					<a href="#exportModal" data-toggle="modal" class="btn btn-sm btn-embossed disabled actionButtons"><i class="pi pixicon-download"></i> Export</a>
+					<a href="#" class="btn btn-sm btn-embossed" id="addPage"><i class="pi pixicon-circle-plus"></i> Ավելացնել</a>
+					<a href="#exportModal" data-toggle="modal" class="btn btn-sm btn-embossed disabled actionButtons"><i class="pi pixicon-download"></i> Ներբեռնել</a>
 				</div>
 
 				<div class="left_headline left_shadows"><i class="pi pixicon-file"></i> .PixBuilder Project</div>
 				<div class="pixbuilderdiv">
-				<a href="#projModal" id="projPage" data-toggle="modal" class="btn btn-info btn-embossed pull-a actiosnButtons projexp" style="width:80%;margin:0 10%;"><i class="pi pixicon-open" ></i> Export & Import</a>
+				<a href="#projModal" id="projPage" data-toggle="modal" class="btn btn-info btn-embossed pull-a actiosnButtons projexp" style="width:80%;margin:0 10%;"><i class="pi pixicon-open" ></i>&nbsp Արտաբեռնում <br>և <br>ներբեռնում</a>
 				</div>
 				
 	  <!--   <a href="#" id ="pix_import" data-toggle="modal" class="btn btn-info btn-sm btn-embossed disabled actionButtons"><span class="fui-export"></span> Import Pages</a>
@@ -98,32 +98,32 @@
 
 		
 		<div class="modes">
-			<span class="modes_title">BUILDING MODE</span>
+			<span class="modes_title">Ստեղծեք ձեր կայքը</span>
 			<label class="radio primary first">
 				<input type="radio" name="mode" id="modeBlock" value="block" data-toggle="radio" disabled="" checked="">
-				<span class="label_text">Elements</span>
+				<span class="label_text">Դետալներ</span>
 			</label>
 			<label class="radio primary first">
 				<input type="radio" name="mode" id="modeContent" value="content" data-toggle="radio" disabled="">
-				<span class="label_text">Content</span>
+				<span class="label_text">Կայքի պարունակությունը</span>
 			</label>
 			<label class="radio primary first">
 				<input type="radio" name="mode" id="modeStyle" value="styling" data-toggle="radio" disabled="">
-				<span class="label_text">Details</span>
+				<span class="label_text">Փոփոխել</span>
 			</label>
 			
 		</div>
 
 
 
-		<a href="#" id="clearScreen" class="btn btn-danger btn-embossed pull-right disabled actionButtons pixbtn"><i class="pi pixicon-trash"></i> Empty Page</a>
+		<a href="#" id="clearScreen" class="btn btn-danger btn-embossed pull-right disabled actionButtons pixbtn"><i class="pi pixicon-trash"></i>Ջնջել էջը</a>
 		
 		<a href="#previewModal" id="preview" data-toggle="modal" class="btn btn-inverse btn-embossed pull-right disabled actionButtons pixbtn" style="display: none"><i class="pi pixicon-eye"></i> Preview</a>
 
 
 		<form action="preview.php" target="_blank" id="pix_preview_form" method="post" style="display:none;">
 			<input type="hidden" name="markup" value="" id="markupField">
-			<button type="submit" type="button" class="btn btn-inverse btn-embossed btn-blue actionButtons pixbtn" id="pixshowPreview"><i class="pi pixicon-eye"></i> Preview</button>
+			<button type="submit" type="button" class="btn btn-inverse btn-embossed btn-blue actionButtons pixbtn" id="pixshowPreview"><i class="pi pixicon-eye"></i> Դիտել</button>
 		</form>
 
 
@@ -131,9 +131,9 @@
 
 		<a href="#seoModal" id="seoButton" data-toggle="modal" class="btn btn-info btn-embossed  pull-right actionButtons seo_btn pixbtn" style=""><i class="pi pixicon-cog"></i> SEO</a>
 		
-		<a href="#exportModal" id="exportPage" data-toggle="modal" class="btn btn-info btn-embossed pull-right disabled actionButtons pixbtn"><i class="pi pixicon-download"></i> Export</a>
+		<a href="#exportModal" id="exportPage" data-toggle="modal" class="btn btn-info btn-embossed pull-right disabled actionButtons pixbtn"><i class="pi pixicon-download"></i> Պահպանել</a>
 
-		<a href="#" id="savePage" class="btn btn-primary btn-embossed pull-right disabled actionButtons pixbtn"><i class="pi pixicon-square-check"></i> <span class="bLabel">Nothing new to save</span></a>
+		<a href="#" id="savePage" class="btn btn-primary btn-embossed pull-right disabled actionButtons pixbtn"><i class="pi pixicon-square-check"></i> <span class="bLabel">Դուք չեք կատարել փոփոխություններ</span></a>
 		
 	</header>
 
@@ -156,9 +156,9 @@
 			</div>
 
 			<div class="top_right_options">
-				<a href="#cssModal" data-toggle="modal" id="open_page_css"><span><i class="pi pixicon-css3"></i> Custom CSS</span></a>
+				<a href="#cssModal" data-toggle="modal" id="open_page_css"><span><i class="pi pixicon-css3"></i> Անհատական CSS</span></a>
 				<!-- &nbsp;|&nbsp; -->
-				<a href="#sectionsModal" data-toggle="modal" id="open_page_sections"><span><i class="pi pixicon-menu"></i> Page Sections</span></a>
+				<a href="#sectionsModal" data-toggle="modal" id="open_page_sections"><span><i class="pi pixicon-menu"></i>Կայքի բաժինները</span></a>
 			</div>
 
 		</div>
@@ -168,7 +168,7 @@
 				<ul style="display: block;" id="page1"></ul>
 			</div>
 			<div class="start" id="start">
-				<span>Build your page by dragging elements onto the canvas</span>
+				<span>Կառուցիր քո էջը տեղադրելով տարրերը այստեղ</span>
 			</div>
 		</div>
 		
@@ -312,7 +312,7 @@
 			<label>Enter Form Type:</label>
 			<select id="formprovider">
 				<option value="">Default Page Provider</option>
-				<option value="ce">Custom Email</option>
+				<option value="ce">Անձնական Email</option>
 				<option value="mc">Mailchimp</option>
 				<option value="cm">CampaginMonitor</option>
 				<option value="gr">GetResponse</option>
