@@ -11,7 +11,7 @@
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/spectrum.css" rel="stylesheet">
 	<link href="css/chosen.css" rel="stylesheet">
-	<link rel="shortcut icon" href="images/favicon.ico"> 
+	<link rel="shortcut icon" href="images/fav.png">
 	<!-- Font Awesome -->
 	<link href="css/font-awesome.css" rel="stylesheet">
 	<link href="js/redactor/redactor.css" rel="stylesheet">
@@ -28,7 +28,7 @@
 
 			<div class="main" id="main">
 
-				<h3 id="pixlogo"><span id="pixversion">VERSION 5.0</span><img src="images/flatpack-logo.png"></h3>
+				<h3 id="pixlogo"><img src="images/flatpack-logo.png"></h3>
 				
 
 				<ul id="elements">
@@ -68,7 +68,7 @@
 
 				<div class="left_headline left_shadows"><i class="pi pixicon-file"></i> .PixBuilder Project</div>
 				<div class="pixbuilderdiv">
-				<a href="#projModal" id="projPage" data-toggle="modal" class="btn btn-info btn-embossed pull-a actiosnButtons projexp" style="width:80%;margin:0 10%;"><i class="pi pixicon-open" ></i>&nbsp Արտաբեռնում <br>և <br>ներբեռնում</a>
+				<a href="#projModal" id="projPage" data-toggle="modal" class="btn btn-info btn-embossed pull-a actiosnButtons projexp" style="width:80%;margin:0 10%;"><i class="pi pixicon-open" ></i>&nbsp Վերբեռնել <br>կամ <br>ներբեռնում</a>
 				</div>
 				
 	  <!--   <a href="#" id ="pix_import" data-toggle="modal" class="btn btn-info btn-sm btn-embossed disabled actionButtons"><span class="fui-export"></span> Import Pages</a>
@@ -181,24 +181,24 @@
 	<div class="sidetitle">
 		<a href="#" class="close"><i class="pi pixicon-cross"></i></a>
 
-		<span><i class="pi pixicon-paper"></i> Detail Editor</span>
+		<span><i class="pi pixicon-paper"></i> Ձևափոխել դետալները</span>
 	</div>
 	<ul class="breadcrumb">
-		<li class="pixfirst_breadcrumb">Editing:</li>
+		<li class="pixfirst_breadcrumb">Փոփոխել:</li>
 		<li class="active" id="editingElement">p</li>
 	</ul>
 
 	<ul class="nav nav-tabs " id="detailTabs">
-		<li class="active"><a href="#tab1"><i class="pi pixicon-drop"></i> Style</a></li>
-		<li style="display: none;"><a href="#link_Tab" id="link_Link"><i class="pi pixicon-paper-clip"></i> Link</a></li>
-		<li style="display: none;"><a href="#image_Tab" id="img_Link"><i class="pi pixicon-image"></i> Image</a></li>
-		<li style="display: none;"><a href="#icon_Tab" id="icon_Link"><i class="pi pixicon-umbrella"></i> Icons</a></li>
-		<li style="display: none;"><a href="#video_Tab" id="video_Link"><span class="fa fa-youtube-play"></span> Video</a></li>
+		<li class="active"><a href="#tab1"><i class="pi pixicon-drop"></i> Ոճ</a></li>
+		<li style="display: none;"><a href="#link_Tab" id="link_Link"><i class="pi pixicon-paper-clip"></i> Լինք</a></li>
+		<li style="display: none;"><a href="#image_Tab" id="img_Link"><i class="pi pixicon-image"></i> Պատկեր</a></li>
+		<li style="display: none;"><a href="#icon_Tab" id="icon_Link"><i class="pi pixicon-umbrella"></i> Icon</a></li>
+		<li style="display: none;"><a href="#video_Tab" id="video_Link"><span class="fa fa-youtube-play"></span> Վիդեո</a></li>
 		<li style="display: none;"><a href="#input_Tab" id="input_Link"><i class="pi pixicon-stack"></i> Field Builder</a></li>
 		<li style="display: none;"><a href="#checkbox_Tab" id="checkbox_Link"><i class="pi pixicon-stack"></i> Checkbox</a></li>
 		<li style="display: none;"><a href="#form_Tab" id="form_Link"><i class="pi pixicon-stack"></i> Form Builder</a></li>
 		<li style="display: none;"><a href="#paypal_Tab" id="paypal_Link"><i class="pi pixicon-paypal"></i> PayPal Builder</a></li>
-		<li style="display: none;"><a href="#animation_Tab" id="animation_Link"><i class="pi pixicon-loader"></i> Animation</a></li>
+		<li style="display: none;"><a href="#animation_Tab" id="animation_Link"><i class="pi pixicon-loader"></i> Անիմացիա</a></li>
 	</ul><!-- /tabs -->
 
 	<div class="tab-content">
@@ -224,7 +224,7 @@
 		<div class="tab-pane link_Tab" id="link_Tab">
 
 			<select id="internalLinksDropdown">
-				<option value="#">Choose a page</option>
+				<option value="#">Ընտրեք էջը</option>
 				<!-- <option value="index.html">index</option> -->
 			</select>
 
@@ -233,11 +233,11 @@
 			</p>
 
 			<select id="pageLinksDropdown">
-				<option value="#">Choose a block (one page sites)</option>
+				<option value="#">Ընտրեք բլոկը</option>
 			</select>
 
 			<p class="text-center or">
-				<span>OR</span>
+				<span>կամ</span>
 			</p>
 
 			<input type="text" class="form-control" id="internalLinksCustom" placeholder="http://somewhere.com/somepage" value="">
@@ -259,7 +259,7 @@
 
 			<form id="imageUploadForm" action="iupload.php">
 				
-				<label>Upload image:</label>
+				<label>Ներբեռնել պատկեր:</label>
 				
 				<div class="form-group">
 
@@ -291,8 +291,8 @@
 			<input type="text" class="form-control" id="inputplace" placeholder="Enter Placeholder" value="">
 			<label>Required Field:</label>
 			<select id="is_required">
-				<option value="#">No</option>
-				<option value="required">Yes</option>
+				<option value="#">Ոչ</option>
+				<option value="required">Այո</option>
 			</select>
 		</div><!-- /.tab-pane -->
 
@@ -300,12 +300,12 @@
 			<label>Enter checkbox Name:</label>
 			<input type="text" class="form-control" id="input_checkbox_name" placeholder="Enter Field Name" value="">
 			<div class="pix_note" style="" id="pix_edit_note">*Use the same name for each group of checkboxes in the form.</div>
-			<label>Enter Value:</label>
+			<label>Նշիր արժեքը:</label>
 			<input type="text" class="form-control" id="input_value" placeholder="Enter value" value="">
 		</div><!-- /.tab-pane -->
 
 		<div class="tab-pane imageFileTab pixformbuilder2" id="form_Tab">
-			<label>Enter Popup ID:</label>
+			<label>Նշիր Popup-ի ID:</label>
 			<input type="text" class="form-control" id="popupid" placeholder="Enter Popup ID" value="">
 			<label>Enter Redirect URL:</label>
 			<input type="text" class="form-control" id="redirecturl" placeholder="Enter Redirect URL" value="">
@@ -1041,13 +1041,13 @@
 	</div>
 
 	<div class="margin-bottom-5 savebtn_div">
-		<button type="button" class="btn btn-primary btn-embossed btn-sm btn-block" id="saveStyling"><i class="pi pixicon-circle-check"></i> Apply Changes</button>
+		<button type="button" class="btn btn-primary btn-embossed btn-sm btn-block" id="saveStyling"><i class="pi pixicon-circle-check"></i> Պահպանել փոփոխությունները</button>
 	</div>
 
 	<div class="sideButtons clearfix">
-		<button type="button" class="btn btn-inverse btn-embossed btn-xs" id="cloneElementButton"><i class="pi pixicon-stack"></i> Clone</button>
-		<button type="button" class="btn btn-warning btn-embossed btn-xs" id="resetStyleButton"><i class="pi pixicon-repeat"></i> Reset</button>
-		<button type="button" class="btn btn-danger btn-embossed btn-xs" id="removeElementButton"><i class="pi pixicon-trash"></i> Remove</button>
+		<button type="button" class="btn btn-inverse btn-embossed btn-xs" id="cloneElementButton"><i class="pi pixicon-stack"></i> Կլոնավորել</button>
+		<button type="button" class="btn btn-warning btn-embossed btn-xs" id="resetStyleButton"><i class="pi pixicon-repeat"></i> Թարմացնել</button>
+		<button type="button" class="btn btn-danger btn-embossed btn-xs" id="removeElementButton"><i class="pi pixicon-trash"></i> Ջնջել</button>
 	</div>
 
 		<!--<p class="text-center or">
@@ -1069,8 +1069,8 @@
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal"><i class="pi pixicon-cross"></i><span class="sr-only">Close</span></button>
-					<h4 class="modal-title" id="myModalLabel"><i class="pi pixicon-menu"></i> Page Sections</h4>
+					<button type="button" class="close" data-dismiss="modal"><i class="pi pixicon-cross"></i><span class="sr-only">Փակել</span></button>
+					<h4 class="modal-title" id="myModalLabel"><i class="pi pixicon-menu"></i> Էջի բաժինները</h4>
 				</div>
 				<div class="modal-body">
 
@@ -1078,7 +1078,7 @@
 						<table class="table" id="sections_table">
 							<tr>
 								<th>Section Order</th>
-								<th>Section Name</th>
+								<th>Բաժնի անունը</th>
 								<th></th> 
 							</tr>
 							<tr><td class="warning"> </td><td class="warning">Sections was not loaded!</td><td class="warning"> </td></tr>
@@ -1088,7 +1088,7 @@
 
 				</div><!-- /.modal-body -->
 				<div class="modal-footer">
-					<button type="button" class="btn btn-embossed" data-dismiss="modal"><span class="fui-cross"></span> Close</button>
+					<button type="button" class="btn btn-embossed" data-dismiss="modal"><span class="fui-cross"></span> Փակել</button>
 				</div>
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
@@ -1099,18 +1099,18 @@
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal"><i class="pi pixicon-cross"></i><span class="sr-only">Close</span></button>
-					<h4 class="modal-title" id="myModalLabel"><i class="pi pixicon-css3"></i> Page Custom CSS</h4>
+					<button type="button" class="close" data-dismiss="modal"><i class="pi pixicon-cross"></i><span class="sr-only">Փակել</span></button>
+					<h4 class="modal-title" id="myModalLabel"><i class="pi pixicon-css3"></i> Անհատական CSS</h4>
 				</div>
 				<div class="modal-body">
-					<label>You can input the custom CSS here (without style tag).</label>
+					<label>Դուք կարող եք այստեղ ավելացնել ձեր CSS կոդերը (առանց style թեգի).</label>
 					<textarea style="width:100%;max-width:100%;min-height:300px;" class="form-control" id="cssToEdit">body *{background: #000 !important;}</textarea>
 					
 					<!-- <button type="button" class="btn btn-embossed" id="firas2"><span class="fui-check"></span> shit</button> -->
 				</div><!-- /.modal-body -->
 				<div class="modal-footer">
-					<button type="button" class="btn btn-embossed" data-dismiss="modal"><span class="fui-cross"></span> Close</button>
-					<button type="button" class="btn btn-embossed" data-dismiss="modal" id="css_save"><span class="fui-check"></span> Save</button>
+					<button type="button" class="btn btn-embossed" data-dismiss="modal"><span class="fui-cross"></span> Փակել</button>
+					<button type="button" class="btn btn-embossed" data-dismiss="modal" id="css_save"><span class="fui-check"></span> Պահպանել</button>
 				</div>
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
@@ -1129,7 +1129,7 @@
 						<i class="pi pixicon-cross"></i>
 						<span class="sr-only">Close</span>
 					</button>
-					<h4 class="modal-title" id="myModalLabel"><i class="pi pixicon-cog"></i> SEO Settings for <span id="pix_seo_title" class="text-primary pName">index.html</span></h4>
+					<h4 class="modal-title" id="myModalLabel"><i class="pi pixicon-cog"></i> SEO կարգավորումները <span id="pix_seo_title" class="text-primary pName">index.html</span></h4>
 				</div>
 
 				<div class="modal-body">
@@ -1146,7 +1146,7 @@
 						<div class="optionPane">
 							
 							<div class="form-group">
-								<label for="name" class="col-sm-8 control-label pix_seo_label">Page Title:</label>
+								<label for="name" class="col-sm-8 control-label pix_seo_label">Կայքի Անունը:</label>
 								<div class="col-sm-12">
 									<input type="text" class="form-control" id="pageData_title" name="pageData_title" placeholder="Page title" value="">
 								</div>
@@ -1179,7 +1179,7 @@
 				</div><!-- /.modal-body -->
 
 				<div class="modal-footer">
-					<button type="button" class="btn btn-embossed" data-dismiss="modal"><i class="pi pixicon-cross"></i> Cancel</button>
+					<button type="button" class="btn btn-embossed" data-dismiss="modal"><i class="pi pixicon-cross"></i> Անվավեր համարել</button>
 					<button type="button" class="btn btn-primary btn-embossed" data-dismiss="modal" id="seoSubmittButton"><i class="pi pixicon-check"></i> Save SEO Settings</button>
 
 					
@@ -1223,7 +1223,7 @@
 						<br>
 
 						<ul class="nav nav-tabs " id="detailTabs2">
-							<li class="active"><a href="#EMAIL_export">Custom Email</a></li>
+							<li class="active"><a href="#EMAIL_export">Անձնական Email</a></li>
 							<li style=""><a href="#MC_export" id="link_Link1">MailChimp</a></li>
 							<li style=""><a href="#CM_export" id="link_Link2">CampaignMonitor</a></li>
 							<li style=""><a href="#GR_export" id="link_Link3">GetResponse</a></li>
@@ -1248,7 +1248,7 @@
 							</div>
 							<div class="tab-pane" id="MC_export">
 								<div class="form-group">
-									<label for="inputEmail3" class="col-sm-11 control-label pix_seo_label">Your API key:</label>
+									<label for="inputEmail3" class="col-sm-11 control-label pix_seo_label">Ձեր API key:</label>
 									<div class="col-sm-12">
 										<input type="text" class="form-control" name="MC_APIKEY" id="MC_APIKEY" placeholder="Mailchimp API Key" value="">
 									</div>
@@ -1316,7 +1316,7 @@
 							</div>
 							<div class="tab-pane" id="AC_export">
 								<div class="form-group">
-									<label for="inputEmail3" class="col-sm-11 control-label pix_seo_label">Your API URL:</label>
+									<label for="inputEmail3" class="col-sm-11 control-label pix_seo_label">Ձեր API URL:</label>
 									<div class="col-sm-12">
 										<input type="text" class="form-control" name="AC_ACTIVECAMPAIGN_URL" id="AC_ACTIVECAMPAIGN_URL" placeholder="ACTIVECAMPAIGN URL" value="">
 									</div>
@@ -1474,7 +1474,7 @@
 
 			</div><!-- /.modal-body -->
 			<div class="modal-footer">
-				<button type="button" class="btn btn-embossed" data-dismiss="modal" id="exportCancel"><i class="pi pixicon-cross"></i> Cancel</button>
+				<button type="button" class="btn btn-embossed" data-dismiss="modal" id="exportCancel"><i class="pi pixicon-cross"></i> Անվավեր համարել</button>
 			</div>
 		</div><!-- /.modal-content -->
 	</div><!-- /.modal-dialog -->
@@ -1581,7 +1581,7 @@
 
 			</div><!-- /.modal-body -->
 			<div class="modal-footer">
-				<button type="button" class="btn btn-embossed" data-dismiss="modal"><i class="pi pixicon-cross"></i> Cancel</button>
+				<button type="button" class="btn btn-embossed" data-dismiss="modal"><i class="pi pixicon-cross"></i> Անվավեր համարել</button>
 				<button type="button" type="button" class="btn btn-primary btn-embossed" id="deleteAllConfirm"><i class="pi pixicon-trash"></i> Delete</button>
 			</div>
 		</div><!-- /.modal-content -->
@@ -1646,7 +1646,7 @@
 </div><!-- /.modal -->
 
 <div id="loader">
-	<img src="images/loading.gif" alt="Loading...">
+	<img src="images/loading.png" alt="Loading...">
 	<span>Loading FLATPACK Elements...</span>
 	<div class="spinner">
 		<div class="double-bounce1"></div>

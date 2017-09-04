@@ -1,6 +1,5 @@
 body {
-//	background: transparent url(../images/noise.png) left top repeat;
-	background: #2a2a2a;
+	background:  url(../images/transp_bg.png)  repeat;
 }
 
 body > .container {
@@ -522,7 +521,7 @@ body .sp-input {
 
 .styleEditor .sideButtons > * {
 	float: left;
-	width: 33.33%;
+	width: 100.33%;
 	border: 0px !important;
 }
 

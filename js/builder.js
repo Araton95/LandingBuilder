@@ -454,10 +454,10 @@ function makeSortable(el) {
 				}
 				
 				//add a delete button
-				delButton = $('<button type="button" class="btn btn-danger deleteBlock"><i class="pi pixicon-trash"></i> remove</button>');
-				resetButton = $('<button type="button" class="btn btn-warning resetBlock"><i class="fa fa-refresh"></i> reset</button>');
+				delButton = $('<button type="button" class="btn btn-danger deleteBlock"><i class="pi pixicon-trash"></i> Ջնջել</button>');
+				resetButton = $('<button type="button" class="btn btn-warning resetBlock"><i class="fa fa-refresh"></i> Թարմացնել </button>');
 				htmlButton = $('<button type="button" class="btn btn-inverse htmlBlock"><i class="fa fa-code"></i> Կոդեր</button>');
-				dupButton = $('<button type="button" class="btn btn-info dupBlock"><i class="pi pixicon-stack"></i> duplicate</button>');
+				dupButton = $('<button type="button" class="btn btn-info dupBlock"><i class="pi pixicon-stack"></i> Կրկնորինակել </button>');
 				
 				frameCover = $('<div class="frameCover"></div>');
 				

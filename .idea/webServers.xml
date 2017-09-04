@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="22ed8be8-aeb8-4c86-9152-c760ec41a940" name="desk" url="http://karape6s.beget.tech">
+        <fileTransfer host="karape6s.beget.tech" port="21" password="dfcbdfd8dfcbdfdedfc5dfc4df93df9f" username="karape6s_aro">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
